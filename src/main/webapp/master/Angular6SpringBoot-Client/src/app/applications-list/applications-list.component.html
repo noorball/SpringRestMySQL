@@ -1,0 +1,9 @@
+<h1>Applications</h1>
+
+<div *ngFor="let application of applications | async" style="width: 300px;">
+  <application-details [application]='application'></application-details>
+</div>
+
+<div>
+  <button type="button" class="button btn-danger" (click)='deleteApplications()'>Delete All</button>
+</div>
